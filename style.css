@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background-color: #111;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding: 3rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    color: #00f0ff;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: square;
+}
+
+a {
+    color: #00f0ff;
+}
