@@ -94,7 +94,16 @@ a {
     border-radius: 10px;
     cursor: pointer;
 }
-
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(40%);
+}
 .hover-card:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
