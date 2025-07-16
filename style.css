@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     color: white;
     background-color: #111;
+    overflow-x: hidden;
 }
 
 canvas {
@@ -37,4 +38,64 @@ ul {
 
 a {
     color: #00f0ff;
+}
+
+/* --------- Animations --------- */
+
+.fade-in {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #00f0ff;
+    white-space: nowrap;
+    animation:
+        typing 2s steps(20, end),
+        blink-caret .75s step-end infinite;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 12ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00f0ff; }
+}
+
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hover-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
 }
