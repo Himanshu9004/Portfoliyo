@@ -71,8 +71,8 @@ a {
     border-right: .15em solid #00f0ff;
     white-space: nowrap;
     animation:
-        typing 2s steps(20, end),
-        blink-caret .75s step-end infinite;
+        typing 2s steps(30, end),
+       
     width: 0;
 }
 
